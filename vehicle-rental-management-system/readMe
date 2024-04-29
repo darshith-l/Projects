@@ -1,0 +1,65 @@
+Vehicle Renatl Management System:
+This is web based system where, users can register to rent all types of vehicles (from cars to trucks, from Buses to JCB)
+The idea is:
+- Owners of vehicle can register to application providing there personal details, vehicles they are intrested to rent.
+- The users typically can rent the intrested vehicles listed in the application.
+- Each bookings are tracked.
+
+The schema and description:
+
+i) Company:
+- This is the list of registered company which is willing to give vehiles for rent.
+- Details such as Company name, size(large, medium, small), liscense number, GST, Company founded in year, Liscense validity, Location, No of vehicles
+
+ii) Vehicle Basic Details:
+- Very basic details of vehicle 
+- Number of seats (including driver seat), Company it belongs to, Registration number, Vehicle type, Manufacturer, Model name, Mileage, per km charge(to be updated dynamically by company), Vehicle category, Vehicle condition.
+
+iii) Vehicle complete details:
+- Complete details of vehicles
+- Registration number, Model name, Manufacturer, Power, Engine, Type(commercial, passenger), Capacity, Manufactured year, owner
+
+iv) Driver:
+- Name of the driver, Driving licsence number, liscence validity, company, rating, types of vehicles he can drive, age, gender.
+
+v) Customer:
+Name, id, dob, local address
+
+vi) Bookings:
+- Customer name, customer id, id of vehicle choosen, booking date(from date and to date), appx num of km driver. 
+
+vii) Acknoledgement:
+- booking_id, num of km driver, total cost (INR), driver choosen, transaction id, rating for vehicle, rating for driver.
+
+Entities identified with attributes:
+
+1) COMPANY: company_name, size, licsence_number, gst, start_year, liscence_validity, location, no_of_vehicles
+***Primary key: gst
+   no_of_vehicles is dynamically updated, 0 when company register
+   size should be (small, medium, large)
+
+2) VEHICLE_BASIC_DETAILS: registration_number, vehicle_type, manufacturer, model_name, number_of_seats, company, mileage, per_km_charge(to be updated dynamically by company), vehicle_category, vehicle_condition.
+***Primary key: registration_number
+   vehicle_type should be (suv, hatchback, cuv, min truck, truck, construction, passenger)
+   vehicle_category should be (small, medium, large, verylarge)
+   vehicle_condition is integer rating from 1 to 10
+
+3) VEHICLE_COMPLETE_DETAILS: registration_number, model_name, manufacturer, power, engine, type, capacity, manufactured_year, owner_name
+***Primary key: registration_number
+   type should be (commercial, passenger)
+
+4) DRIVER: name, driving_licsense, liscence_validity_till, company, rating, types_of_vehicles_he_can_drive, age, gender.
+***Primary key: driving_licsense
+
+5) CUSTOMER: name, user_id, dob, local_address
+***Primary key: user_id
+
+6) BOOKINGS:  booking_id, customer_name, customer_id, id_of_vehicle_choosen, booking_from_date, booking_to_date, appx_num_km.
+
+7) ACKNOWLEDGEMENT: booking_id, num_of_km_driven, total_cost, driver_choosen, transaction_id, rating_for_vehicle, rating_for_driver.
+***Primary key: booking_id
+   rating_for_vehicle, rating_for_driver to be updated dynamically 
+
+
+
+
