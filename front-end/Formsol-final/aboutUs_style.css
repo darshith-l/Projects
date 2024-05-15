@@ -1,0 +1,218 @@
+.wrapper
+{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.child1
+{
+   width: 65%;
+}
+
+.heading
+{
+   text-align: center;
+   width: 70%;
+   margin-top: 30px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 30px;
+   padding: 20px;
+   border: 5px solid #26580F;
+}
+.heading h1
+{
+   color: #26580F;
+   font-size: 90px;
+}
+.heading h2
+{
+   border: 1px solid #2AA10F;
+   padding: 5px;
+   width: 40%;
+   margin-left: auto;
+   margin-right: auto;
+   color: #0b1b03;
+}
+
+.content
+{
+   padding: 20px;
+   text-align: center;
+}
+.content p
+{
+   color:#26580F;
+   padding: 5px;
+   font-size: larger;
+}
+.content h2
+{
+   color:#26580F;
+   margin-top: 5px;
+   text-align: center;
+   padding: 10px;
+   border: 2px solid #26580F;
+}
+.about-heading
+{
+   text-align: center;
+   margin-top: 20px;
+   border-bottom: 2px solid #2AA10F;
+   border-top: 2px solid #2AA10F;
+   padding: 10px;
+}
+.about-heading h1
+{
+   color: #0b1b03;
+}
+.aboutEachService
+{
+   margin-top: 20px;
+   margin-bottom: 20px;
+   padding: 10px; 
+}
+.aboutEachService h2
+{
+   background-color: #2AA10F;
+   color: #fff;
+}
+.aboutEachService input
+{
+   width: 40px;
+   text-align: center;
+   background-color: #2AA10F;
+   border: none;
+}
+.service-heading 
+{
+   background-color: #2AA10F;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 10px;
+   margin-bottom: 20px;
+} 
+
+
+.content0
+{
+   margin-bottom: 30px;
+   text-align: center;
+   display: none;
+}
+.content0 p
+{
+   text-align: justify;
+   color: #26580F;
+   font-size: large;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+.content0 a
+{
+   text-align: center;
+   border: 1px solid #26580F;
+   color: #0b1b03;
+   padding: 9px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.child2
+{
+   width: 30%;
+   margin-right: 2%;
+   padding: 20px;
+   background-color: #2AA10F;
+}
+
+.child2 h1
+{
+   text-align: center;
+   text-decoration: underline;
+   border: 1px solid #fff;
+   color: #fff;
+   padding: 10px;
+}
+.child2 a
+{
+   color: #0b1b03;
+   text-decoration: underline;
+
+}
+.child2 ul li
+{
+   display: block;
+   margin-top: 30px;
+   font-size: larger;
+   color: #fff;
+   background-color: #fff;
+   border: 1px solid #fff;
+   padding: 10px;
+}
+
+@media only screen and (max-width: 1080px)
+{
+.heading
+{
+   text-align: center;
+   width: 70%;
+   margin-top: 30px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 30px;
+   padding: 15px;
+   border: 5px solid #26580F;
+}
+.heading h1
+{
+   color: #26580F;
+   font-size: 40px;
+}
+.heading h2
+{
+   border: 1px solid #2AA10F;
+   padding: 5px;
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 10px;
+   font-size: 13px;
+   color: #0b1b03;
+}
+.wrapper
+{
+   flex-direction: column;
+}
+.child1
+{
+   width: 100%;
+}
+.child2
+{
+   width: 100%;
+}
+.content
+{
+   padding: 10px;
+}
+.content p {
+   margin-bottom: 20px;
+};
+.about-heading h1
+{
+   font-size: 25px;
+}
+.service-heading h2
+{
+   font-size: 20px;
+   font-weight: lighter;
+}
+.content0 p
+{
+   padding: 0px;
+}
+
+}

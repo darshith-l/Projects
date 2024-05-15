@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Profit Calculator</title>
+    <link rel="stylesheet" type="text/css" href="performanceLog.css">
+</head>
+<body>
+    <h1>Performance around you!</h1>
+
+    <button id="showFormButton">Add Crop Data</button>
+
+    <div id="formContainer" style="display: none;">
+        <form id="cropForm">
+            <label for="cropName">Crop Grown:</label>
+            <input type="text" id="cropName" required><br>
+
+            <label for="expenditure">Expenditure:</label>
+            <input type="number" id="expenditure" required><br>
+
+            <label for="revenue">Revenue:</label>
+            <input type="number" id="revenue" required><br>
+
+            <button type="submit">Calculate</button>
+        </form>
+    </div>
+
+    <div id="result"></div>
+
+    <h2>Crop Data</h2>
+    <table id="cropTable">
+        <thead>
+            <tr>
+                <th>Crop Grown</th>
+                <th>Expenditure</th>
+                <th>Revenue</th>
+                <th>Profit</th>
+                <th>Is Worth It</th>
+            </tr>
+        </thead>
+        <tbody id="cropDataBody">
+            <!-- Data will be inserted here dynamically -->
+            <tr>
+               <td>Wheat</td>
+               <td>1000</td>
+               <td>1500</td>
+               <td>500</td>
+               <td>Yes</td>
+           </tr>
+           <tr>
+               <td>Corn</td>
+               <td>800</td>
+               <td>700</td>
+               <td>-100</td>
+               <td>No</td>
+           </tr>
+           <tr>
+               <td>Rice</td>
+               <td>1200</td>
+               <td>1600</td>
+               <td>400</td>
+               <td>Yes</td>
+           </tr>
+           <tr>
+               <td>Potatoes</td>
+               <td>500</td>
+               <td>600</td>
+               <td>100</td>
+               <td>Yes</td>
+           </tr>
+           <tr>
+               <td>Tomatoes</td>
+               <td>400</td>
+               <td>350</td>
+               <td>-50</td>
+               <td>No</td>
+           </tr>
+        </tbody>
+    </table>
+
+    <script src="performanceLog.js"></script>
+</body>
+</html>

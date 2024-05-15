@@ -1,0 +1,135 @@
+*
+{
+   margin: 0px;
+   padding: 0px;
+   text-decoration: none;
+   box-sizing: border-box;
+   font-family: sans-serif;
+   color:#221211;
+}
+
+.dashboard
+{
+   margin-top: 20px;
+   width: 100%;
+  
+}
+
+.dashboard::after{
+   content:"";
+   display: block;
+   clear: both;
+   margin-bottom: 10px;
+}
+
+
+.login
+{
+   width: 55%;
+   height: 60px;
+   background-color: #fac7c3af;
+   color: #38B4D0;
+   float: left;
+   line-height: 60px;
+   padding-left: 5px;
+   border-right: #38B4D0;
+}
+.login a{
+   padding: 8px;
+   background-color: #FFF7EC;
+   color: #221211;
+}
+
+.nav
+{
+   width: 15%;
+   float: left;
+   height: 60px;
+   line-height: 60px;
+   background-color: #a9e2f5;
+   box-shadow: 0px 0px 10px solid #fac7c3;
+}
+.nav a{
+   color: #221211;
+}
+
+.nav li{
+   height: 60px;
+   display: inline-block;
+   padding: 10px;
+   background-color: #a9e2f5 ;
+   line-height: 40px;
+   text-align: center;
+   border-right: 2px solid #fac7c3;
+}
+input{
+   height: 30px;
+   width: 150px;
+   margin: 10px;
+   padding: 5px;
+   background-color: #fac7c3af;
+}
+
+#s1,#s2,#s3,#s4,#s5,#s12,#s22,#s32,#s42,#s52,#s13,#s23,#s33,#s43,#s53
+{
+   width: 30%;
+   margin-left: 25%;
+   background-color: #38b4d05e;
+   box-shadow: 0 0 12px #fac7c3af;
+   text-align: center;
+}
+
+form{
+   margin: 10px;
+   padding: 15px;
+}
+
+h1{
+   text-align: center;
+   border-bottom: #38b4d0;
+   margin: 20px;
+   padding: 10px;
+}
+h2{
+   text-align: center;
+   border-bottom: 2px solid #38b4d0;
+   margin: 20px;
+   padding: 10px;
+}
+
+footer{
+   border-top: 3px solid #38b4d03f ;
+   margin-top: 40px;
+   width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 30px;
+   text-align: center;
+   height: 100px;
+   color: beige;
+   font-weight: bold;
+   background-color: #a9e2f5;
+}
+
+
+footer p{
+   margin-top: 10px;
+}
+
+footer li{
+   display: inline-block;
+   margin: 10px;
+   padding: 20px;
+   background-color: #a9e2f5a6;
+}
+
+footer ul
+{
+   margin: auto;
+}
+
+footer a
+{
+   color: #221211;
+   font-weight: thin;
+}

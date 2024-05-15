@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Career calculator</title>
+   <script>
+      var p, c, a, t, m;
+      function pfunc(x) {
+         p = x;
+         document.getElementById("out1").innerHTML = "p";
+         document.getElementById("out2").innerHTML = p;
+      }
+
+      function cfunc(x) {
+         c = x;
+         document.getElementById("out1").innerHTML = "c";
+         document.getElementById("out2").innerHTML = c;
+      }
+
+      function afunc(x) {
+         a = x;
+         document.getElementById("out1").innerHTML = "a";
+         document.getElementById("out2").innerHTML = a;
+      }
+
+      function mfunc(x) {
+         m = x;
+         document.getElementById("out1").innerHTML = "m";
+         document.getElementById("out2").innerHTML = m;
+      }
+
+      function tfunc(x) {
+         t = x;
+         document.getElementById("out1").innerHTML = "t";
+         document.getElementById("out2").innerHTML = t;
+      }
+
+      function compute() {
+         if (m < 3) {
+            document.getElementById("out4").innerHTML = "OOps!! you have less problem solving and math skill which is crucial in software domain. Learn from open sources like KHAN ACADAMY and browse your career in AI"
+         }
+         else {
+            if (m == 3) {
+               document.getElementById("out4").innerHTML = "Practice mathematics since maths and problem solving is crucial in software domain! ";
+            }
+
+            if (t == 1) {
+               document.getElementById("out5").innerHTML = "Team adaptability is must! since projects in software domain often involves collabration";
+            }
+
+            if (c >= 3 && p > 3 && a > 2) {
+
+
+               if (c == 3) {
+                  document.getElementById("out6").innerHTML = "CYBER SECURITY SUITS TO YOU";
+                  document.getElementById("out7").innerHTML = "VIEW BEST CAREER PATH FOR YOU!";
+               }
+               else {
+                  document.getElementById("out6").innerHTML = "AI DOMAIN SUITS TO YOU";
+                  document.getElementById("out8").innerHTML = "VIEW BEST CAREER PATH FOR YOU!";
+               }
+            }
+
+            else if (c > 3 && p >= 3) {
+               document.getElementById("out6").innerHTML = "MACHINE LEARNING SUITS TO YOU";
+               document.getElementById("out9").innerHTML = "VIEW BEST CAREER PATH FOR YOU!";
+            }
+
+            else if (a > 2) {
+               document.getElementById("out6").innerHTML = "CLOUD COMPUTING SUITS TO YOU";
+               document.getElementById("out10").innerHTML = "VIEW BEST CAREER PATH FOR YOU!";
+
+            }
+
+            else {
+               document.getElementById("out6").innerHTML = "DEVOPS SUITS TO YOU";
+               document.getElementById("out11").innerHTML = "VIEW BEST CAREER PATH FOR YOU!";
+
+            }
+         }
+      }
+   </script>
+</head>
+
+<body>
+   <div>
+      <ul>
+         <li><a href="index.html">HOME</li></a>
+         <li>ABOUT</li>
+         <li>CONTACT US</li>
+      </ul>
+   </div>
+   <h1 class="heading">AI CAREER CONSULT</h1>
+
+   <section>
+
+      <div>
+         <p class="sub-head">PATIENCE</p>
+         <input type="button" value="1" onclick="pfunc('1')" />
+         <input type="button" value="2" onclick="pfunc('2')" />
+         <input type="button" value="3" onclick="pfunc('3')" />
+         <input type="button" value="4" onclick="pfunc('4')" />
+         <input type="button" value="5" onclick="pfunc('5')" />
+      </div>
+
+      <div>
+         <p class="sub-head">CREATIVITY</p>
+         <input type="button" value="1" onclick="cfunc('1')" />
+         <input type="button" value="2" onclick="cfunc('2')" />
+         <input type="button" value="3" onclick="cfunc('3')" />
+         <input type="button" value="4" onclick="cfunc('4')" />
+         <input type="button" value="5" onclick="cfunc('5')" />
+      </div>
+
+      <div>
+         <p class="sub-head">ABILITY TO MEMORIZE</p>
+         <input type="button" value="1" onclick="afunc('1')" />
+         <input type="button" value="2" onclick="afunc('2')" />
+         <input type="button" value="3" onclick="afunc('3')" />
+         <input type="button" value="4" onclick="afunc('4')" />
+         <input type="button" value="5" onclick="afunc('5')" />
+      </div>
+
+      <div>
+         <p class="sub-head">PROBLEM SOLIVING SKILLS</p>
+         <input type="button" value="1" onclick="mfunc('1')" />
+         <input type="button" value="2" onclick="mfunc('2')" />
+         <input type="button" value="3" onclick="mfunc('3')" />
+         <input type="button" value="4" onclick="mfunc('4')" />
+         <input type="button" value="5" onclick="mfunc('5')" />
+      </div>
+
+      <div>
+         <p class="sub-head">TEAM ADAPTABILITY</p>
+         <input type="radio" onclick="tfunc('1')">NO</input>
+         <input type="radio" onclick="tfunc('5')">YES</input>
+         <br>
+      </div>
+
+   </section>
+
+   <section class="confirm">
+   <p style="text-align: center"><input type="button" value="submit" onclick="compute()" /></p>
+   </section>
+
+   <p id="out4"></p>
+   <p id="out5"></p>
+   <p id="out6"></p>
+
+   
+   <a href="cyber security.html">
+      <p id="out7"></p>
+   </a>
+
+
+   <a href="ai.html">
+      <p id="out8"></p>
+   </a>
+
+   <a href="machine_learning.html">
+      <p id="out9"></p>
+   </a>
+
+   <a href="cc.html">
+      <p id="out10"></p>
+   </a>
+
+   <a href="devops.html">
+      <p id="out11"></p>
+   </a>
+
+   <section class="foot-back">
+      <footer>
+         <h3 class="foot">ABOUT</h3>
+         <p class="foot">AI CAREER CNSULT IS A SOFTWARE THAT MAPS TECHNICAL SKILL AND SOFTSKILLS</p>
+         <p class="foot">PRESENTLY TRAINING DATA IS BEEN ASSUMED</p>
+         <p class="foot">AND OUTPUT IS PROVIDED LOGICALLY</p>
+
+         <p>
+         <div>
+            <ul>
+               <li>HOME</li>
+               <li>ABOUT</li>
+               <li>CONTACT US</li>
+            </ul>
+         </div></p>
+      </footer>
+   </section>
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+*
+{
+   color: #fff;
+
+}
+
+.heading
+{
+   text-align: center;
+   width: 70%;
+   margin-top: 30px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 30px;
+   padding: 20px;
+   border: 5px solid #26580F;
+}
+.heading h1
+{
+   color: #26580F;
+   font-size: 90px;
+}
+.card-heading h1
+{
+   padding: 10px;
+   border: 2px solid #2AA10F;
+   text-align: center;
+   color: #0b1b03;
+}
+.content
+{
+   height: 70%;
+}
+.content h1
+{
+   color: #fff;
+   text-decoration: underline;
+}
+.content p
+{
+   color: #fff;
+   margin-top: 5px;
+}
+.card-wrapper
+{
+   display: flex;
+   flex-direction: row;
+}
+.card
+{
+   background-color: #2AA10F;
+   width: 22%;
+   height: 200px;
+   text-align: center;
+   padding: 15px;
+   margin: 3%;
+}
+.price
+{
+   border-top: 2px solid black;
+   margin-top: 5px;
+   display: flex;
+   justify-content: space-around;
+}
+.actual
+{
+   text-decoration: line-through;
+   color: #0b1b03;
+}
+.add-remove
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: end;
+   align-items: end;
+   margin: 5px;
+}
+.add-remove input
+{
+   margin: 2px;
+   height: 30px;
+   width: 30px;
+   color:#0b1b03;
+}
+
+.child2
+{
+   width: 100%;
+   margin-top: 40px;
+   padding: 20px;
+   background-color: #2AA10F;
+}
+
+.child2 h1
+{
+   text-align: center;
+   text-decoration: underline;
+   border: 1px solid #fff;
+   color: #fff;
+   padding: 10px;
+}
+.child2 a
+{
+   color: #0b1b03;
+   text-decoration: underline;
+
+}
+.child2 ul li
+{
+   font-size: larger;
+   color: #fff;
+   background-color: #fff;
+   border: 1px solid #fff;
+   padding: 10px;
+   display: inline-block;
+   width: 30%;
+   margin: 1%;
+}
+
+@media only screen and (max-width: 1080px)
+{
+.heading h1
+{
+   color: #26580F;
+   font-size: 40px;
+}
+.card-wrapper
+{
+   flex-direction: column;
+}
+.card
+{
+   width: 96%;
+   margin: 2%;
+}
+.card-heading
+{
+   margin-bottom: 40px;
+   margin-top: 40px;
+}
+.card-heading h1
+{
+   font-size: 30px;
+}
+.child2 ul li
+{
+   font-size: large;
+   width: 96%;
+   margin: 2%;
+}
+}

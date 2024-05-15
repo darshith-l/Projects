@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>expenditure</title>
+    <link rel="stylesheet" href="budgetLog.css">
+</head>
+<body>
+    <h1>Track Your expenditure and profit</h1>
+    <button id="showFormButton">Add</button>
+
+    <div id="formContainer" style="display: none;">
+        <form id="worthForm">
+            <label for="amount">Amount Spent:</label>
+            <input type="number" id="amount" required><br>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments"></textarea><br>
+
+            <label for="profit">Profit:</label>
+            <input type="number" id="profit"><br>
+
+            <button type="submit">Calculate</button>
+        </form>
+    </div>
+
+    <div id="result"></div>
+
+    <h2>Recorded Data</h2>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Amount Spent</th>
+                <th>Comments</th>
+                <th>Profit</th>
+                <th>Is Worth It</th>
+            </tr>
+            
+        </thead>
+        <tbody id="dataBody">
+            <!-- Data will be inserted here dynamically -->
+            <tr>
+                <td>1000</td>
+                <td>Good investment</td>
+                <td>500</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>500</td>
+                <td>Not sure</td>
+                <td>-200</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>2000</td>
+                <td>Great ROI</td>
+                <td>1000</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>750</td>
+                <td>Moderate</td>
+                <td>100</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>300</td>
+                <td>Low risk</td>
+                <td>50</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="performanceLog/performanceLog.html">See how Other farmers are performing!</a>
+
+    <script src="script.js"></script>
+</body>
+</html>

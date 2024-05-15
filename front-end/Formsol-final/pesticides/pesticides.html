@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pesticide Selection</title>
+    <link rel="stylesheet" type="text/css" href="pesticides.css">
+</head>
+<body>
+    <h1>Pesticide Selection</h1>
+
+    <form id="pesticideForm">
+        <label for="crop">Crop Name:</label>
+        <input type="text" id="crop" required><br>
+
+        <label for="soilType">Soil Type:</label>
+        <select id="soilType" required>
+            <option value="clay">Clay</option>
+            <option value="sandy">Sandy</option>
+            <option value="loam">Loam</option>
+        </select><br>
+
+        <label for="region">Region:</label>
+        <select id="region" required>
+            <option value="Coastal">Coastal</option>
+            <option value="Hill">Hill</option>
+            <option value="Plains">Plains</option>
+            <option value="Desert">Desert</option>
+            <option value="Forest">Forest</option>
+        </select><br>
+        
+
+        <button type="submit">Search Pesticides</button>
+    </form>
+
+    <h2>Recommended Pesticides</h2>
+    <div id="pesticideList" class="shopping-list">
+        <!-- Pesticides will be listed here dynamically -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

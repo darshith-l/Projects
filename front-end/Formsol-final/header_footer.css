@@ -1,0 +1,140 @@
+*
+{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   color: #fff;
+   text-decoration: none;
+}
+b
+{
+   color: #0b1b03;
+}
+
+.navigation-bar
+{
+   background-color: #2AA10F;
+   height: 60px;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: end;
+   box-shadow: 0 0 5px 1px black;
+}
+
+.logo
+{
+   width: 70px;
+   height: 60px;
+}
+.logo img
+{
+   width: 60px;
+   height: 60px;
+   border-radius: 50px;
+}
+.navLinks
+{
+   width: 30%;
+   height: 60px;
+   margin-left: 1%;
+}
+
+.navLinks ul li
+{
+   margin-right: 20px;
+   display: inline-block;
+   text-align: center;
+   padding: 20px;
+}
+.footer
+{
+   background-color: #26580F;
+   text-align: center;
+   margin-top: 40px;
+   padding: 50px;
+}
+
+.footer-content
+{
+   margin-top: 20px;
+   display: justify;
+}
+.footer ul li
+{
+   display: inline-block;
+   margin: 5px;
+   padding: 10px;
+}
+.footer-navs
+{
+   margin: 20px;
+}
+.footer-medias
+{
+   margin: 30px;
+}
+.footer-medias div
+{
+   padding: 10px;
+}
+.footer-medias div:hover
+{
+   box-shadow: 0px 0px 5px 0px;
+   padding: 10px;
+   border-radius: 10px;
+}
+.footer-medias img
+{
+   width: 60px;
+   height: 60px;
+   border-radius: 50px;
+}
+.footer ul li
+{
+   margin: 20px;
+}
+.footer ul li:hover
+{
+   margin: 18px;
+   border: 2px solid #fff;
+   border-radius: 10px;
+}
+@media only screen and (max-width: 1080px)
+{
+.footer
+{
+margin-top: 40px;
+font-size: small;
+font-size: 15px;
+padding: 5px;
+}
+.footer ul li
+{
+   margin: 2px;
+}
+.footer img
+{
+   height: 30px;
+   width: 30px;
+} 
+.navLinks
+{
+   width: 100%;
+   height: 60px;
+   margin-left: 1%;
+}  
+.navLinks ul li
+{
+   margin-right: 0px;
+   font-size: 15px;
+   padding-top: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+}
+body
+{
+   background-color: #E0E0E0;
+}

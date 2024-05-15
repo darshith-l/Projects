@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <h1>Ragi</h1>
+   <input type="button" value=">" name=">" onclick="c1()">
+   <div id="demo" style="display: none">
+      <p>disease 1</p>
+   <input type="button" value=">" name=">" onclick="c1d1()">
+   <div id="c1d1" style="display: none">
+      Remedies to be displayed
+   </div>
+
+      <p>disease 2</p>
+      <input type="button" value=">" name=">" onclick="c1d2()">
+      <div id="c1d2" style="display: none">
+         Remedies to be displayed
+      </div>
+      <p>disease 3</p>
+      <input type="button" value=">" name=">" onclick="c1d3()">
+      <div id="c1d3" style="display: none">
+         Remedies to be displayed
+      </div>
+      <p>disease 4</p>
+      <input type="button" value=">" name=">" onclick="c1d4()">
+      <div id="c1d4" style="display: none">
+         Remedies to be displayed
+      </div>
+      <p>disease 5</p>
+      <input type="button" value=">" name=">" onclick="c1d5()">
+      <div id="c1d5" style="display: none">
+         Remedies to be displayed
+      </div>
+   </div>
+
+
+   <script>
+      function hide(x) {
+         if (x.style.display === "none") {
+            x.style.display = "block";
+         }
+         else {
+            x.style.display = "none";
+
+         }
+      }
+
+      function c1()
+      {
+         var x= document.getElementById("demo");
+         hide(x);
+      }
+
+      function c1d1()
+      {
+         var x= document.getElementById("c1d1");
+         hide(x);
+      }
+      function c1d2()
+      {
+         var x= document.getElementById("c1d2");
+         hide(x);
+      }
+      function c1d3()
+      {
+         var x= document.getElementById("c1d3");
+         hide(x);
+      }
+      function c1d4()
+      {
+         var x= document.getElementById("c1d4");
+         hide(x);
+      }
+      function c1d5()
+      {
+         var x= document.getElementById("c1d5");
+         hide(x);
+      }
+   </script>
+</body>
+
+</html>

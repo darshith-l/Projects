@@ -1,0 +1,244 @@
+*
+{
+   margin: 0px;
+   padding: 0px;
+   text-decoration: none;
+   box-sizing: border-box;
+   font-family: sans-serif;
+   color:#221211;
+}
+
+.dashboard
+{
+   margin-top: 20px;
+   width: 100%;
+  
+}
+
+.dashboard::after{
+   content:"";
+   display: block;
+   clear: both;
+   margin-bottom: 10px;
+}
+
+
+.login
+{
+   width: 55%;
+   height: 60px;
+   background-color: #fac7c3af;
+   color: #38B4D0;
+   float: left;
+   line-height: 60px;
+   padding-left: 5px;
+   border-right: #38B4D0;
+}
+.login a{
+   padding: 8px;
+   background-color: #FFF7EC;
+   color: #221211;
+}
+
+.nav
+{
+   width: 15%;
+   float: left;
+   height: 60px;
+   line-height: 60px;
+   background-color: #a9e2f5;
+   box-shadow: 0px 0px 10px solid #fac7c3;
+}
+.nav a{
+   color: #221211;
+}
+
+.nav li{
+   height: 60px;
+   display: inline-block;
+   padding: 10px;
+   background-color: #a9e2f5 ;
+   line-height: 40px;
+   text-align: center;
+   border-right: 2px solid #fac7c3;
+}
+
+.parent
+{
+   width: 100%;
+   background-color: #fac7c3a2;
+}
+
+.parent::after
+{
+content:"";
+display: block;
+clear: both;   
+}
+
+.basic-details
+{
+   background-color: #38b4d03f;
+   min-height: 200px;
+   width: 20%;
+   float: left;
+   margin: 1%;
+}
+.basic-details table,tr,td
+{
+   padding: 5px;
+   margin: 5px;
+   border-bottom: 1px solid #fac7c3
+}
+.teacher-comment
+{
+   width: 70%;
+   float: left;
+   padding: 20px;
+   
+}
+.parent-comment
+{
+   width: 70%;
+   float: left;
+   padding: 20px;
+
+}
+
+
+#marks 
+{
+   text-align: center;
+   margin-top: 60px;
+   padding: 5px;
+   background-color: #fac7c3af;
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 50px;
+   min-height: 75px;
+   line-height: 75px;
+   box-shadow: 0px 0px 15px #38B4D0;
+}
+.study-materials
+{
+   width: 75%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 10px;
+
+}
+.study-materials::after{
+   display: block;
+   content: "";
+   clear: both;
+}
+.online-moocs,.materials
+{
+   background-color: #38b4d0a2;
+   float: left;
+   width: 40%;
+   margin-right: 10%;
+   padding: 10px;
+   text-align: left;
+   line-height: 20px;
+   height: 350px;
+   box-shadow: 0px 0px 10px #fac7c3;
+}
+.online-moocs h2{
+   text-align: center;
+   padding: 5px;
+   border-bottom: 2px solid #fac7c3;
+   margin-bottom: 20px;
+}
+
+.online-moocs a{
+   padding: 10px;
+   margin-top: 10px;
+}
+.materials h2{
+   text-align: center;
+   padding: 5px;
+   border-bottom: 2px solid #fac7c3;
+   margin-bottom: 20px;
+}
+.s1
+{
+   width: 40%;
+   height: 50px;
+   margin-bottom: 10px;
+   margin-left: 5%;
+   float: left;
+   background-color: #fac7c3;
+   text-align: center;
+   line-height: 50px;
+   box-shadow: 0px 0px 7px white;
+}
+.s1:hover{
+border: 3px solid #38B4D0;
+line-height: 44px;
+}
+
+.websites
+{
+   background-color: #fac7c3d7;
+   width: 90%;
+   margin-right: auto;
+   margin-left: auto;
+   margin-top: 30px;
+}
+.websites::after
+{
+   display: block;
+   content: "";
+   clear: both;
+}
+
+.scholorship,.internship
+{
+   width: 30%;
+   float: left;
+   padding: 10px;
+   margin:auto;
+   text-align: center;
+}
+
+
+footer{
+   border-top: 3px solid #38b4d03f ;
+   margin-top: 40px;
+   width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 30px;
+   text-align: center;
+   height: 100px;
+   color: beige;
+   font-weight: bold;
+   background-color: #a9e2f5;
+}
+
+
+footer p{
+   margin-top: 10px;
+}
+
+footer li{
+   display: inline-block;
+   margin: 10px;
+   padding: 20px;
+   background-color: #a9e2f5a6;
+}
+
+footer ul
+{
+   margin: auto;
+}
+
+footer a
+{
+   color: #221211;
+   font-weight: thin;
+}
+
+

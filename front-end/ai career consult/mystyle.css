@@ -1,0 +1,49 @@
+body{
+   background-color: black;
+   color: #e094ba;
+}
+
+h1 {
+   text-align: center;
+   font-size: 70px;
+}
+
+a
+{
+   text-decoration: none;
+}
+
+h3{
+   border: 2px solid #e094ba;
+   margin: 5px;
+   padding: 15px;
+}
+
+h3:hover{
+   background-color: #e094ba;
+   color: black;
+}
+ul li
+{
+   display: inline-block;
+   margin-right: 0;
+   padding: 10px;
+}
+
+.foot
+{
+   color: white;
+   background-color: rgb(32, 28, 28);
+   text-align: center;
+   font-size: 15px;
+   padding: 5px;
+   margin: 10px;
+}
+
+.foot-back
+{
+   background-color: rgb(32, 28, 28);
+   text-align: center;
+   padding: 5px;
+   margin: 60px;
+}
