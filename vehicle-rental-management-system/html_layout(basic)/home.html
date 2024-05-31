@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Available Cars</title>
+    <style>
+        .car {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Available Cars</h1>
+    <div class="car">
+        <h2>Car 1</h2>
+        <p>Per km charge: $0.50</p>
+        <form action="booking.html" method="post">
+            <input type="hidden" name="car" value="Car 1">
+            <input type="submit" value="Opt for Rent">
+        </form>
+    </div>
+    <div class="car">
+        <h2>Car 2</h2>
+        <p>Per km charge: $0.60</p>
+        <form action="booking.html" method="post">
+            <input type="hidden" name="car" value="Car 2">
+            <input type="submit" value="Opt for Rent">
+        </form>
+    </div>
+    <!-- Add more cars as needed -->
+</body>
+</html>
